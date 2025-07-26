@@ -17,15 +17,16 @@ A Python project to read environmental data from a BME280 sensor and publish it 
 
 2. (Optional) Create and activate a virtual environment:
    
-```python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+   ```
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
 4. Install the required Python packages:
 
-```
-pip install -r requirements.txt
-```
+   ```
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 
@@ -39,7 +40,7 @@ pip install -r requirements.txt
 
 4. Access sensor data:
 
-http://your-device-ip:5000/
+   http://your-device-ip:5000/
 
 4. INDIlib can then read this data via the web API for further use.
 
