@@ -16,29 +16,31 @@ A Python project to read environmental data from a BME280 sensor and publish it 
    cd bme280-websensor
 
 2. (Optional) Create and activate a virtual environment:
-´´´
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-´´´
+   
+   ```
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-3. Install the required Python packages:
+4. Install the required Python packages:
 
-´´´
-pip install -r requirements.txt
-´´´
+   ```
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 
 1. Connect your BME280 sensor to the device running this script (e.g., Raspberry Pi).
+   ![image info](bme280_wiring.png)
 
-2. Start the Flask Server: 
-´´´
-python3 server_api.py
-´´´
+3. Start the Flask Server:
+   ```
+   python3 server_api.py
+   ```
 
-3. Access sensor data:
+4. Access sensor data:
 
-http://<your-device-ip>:5000/
+   http://your-device-ip:5000/
 
 4. INDIlib can then read this data via the web API for further use.
 
