@@ -1,0 +1,155 @@
+<INDIDriver>
+<newSwitchVector device='Weather Watcher' name='DEBUG'>
+  <oneSwitch name='ENABLE'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='DISABLE'>
+      On
+  </oneSwitch>
+</newSwitchVector>
+<newNumberVector device='Weather Watcher' name='POLLING_PERIOD'>
+  <oneNumber name='PERIOD_MS'>
+      1000
+  </oneNumber>
+</newNumberVector>
+<newSwitchVector device='Weather Watcher' name='DEBUG_LEVEL'>
+  <oneSwitch name='DBG_ERROR'>
+      On
+  </oneSwitch>
+  <oneSwitch name='DBG_WARNING'>
+      On
+  </oneSwitch>
+  <oneSwitch name='DBG_SESSION'>
+      On
+  </oneSwitch>
+  <oneSwitch name='DBG_DEBUG'>
+      Off
+  </oneSwitch>
+</newSwitchVector>
+<newSwitchVector device='Weather Watcher' name='LOGGING_LEVEL'>
+  <oneSwitch name='LOG_ERROR'>
+      On
+  </oneSwitch>
+  <oneSwitch name='LOG_WARNING'>
+      On
+  </oneSwitch>
+  <oneSwitch name='LOG_SESSION'>
+      On
+  </oneSwitch>
+  <oneSwitch name='LOG_DEBUG'>
+      Off
+  </oneSwitch>
+</newSwitchVector>
+<newSwitchVector device='Weather Watcher' name='LOG_OUTPUT'>
+  <oneSwitch name='CLIENT_DEBUG'>
+      On
+  </oneSwitch>
+  <oneSwitch name='FILE_DEBUG'>
+      Off
+  </oneSwitch>
+</newSwitchVector>
+<newNumberVector device='Weather Watcher' name='WEATHER_UPDATE'>
+  <oneNumber name='PERIOD'>
+      60
+  </oneNumber>
+</newNumberVector>
+<newTextVector device='Weather Watcher' name='ACTIVE_DEVICES'>
+  <oneText name='ACTIVE_GPS'>
+      GPS Simulator
+  </oneText>
+</newTextVector>
+<newNumberVector device='Weather Watcher' name='GEOGRAPHIC_COORD'>
+  <oneNumber name='LAT'>
+      51
+  </oneNumber>
+  <oneNumber name='LONG'>
+      357.69999999999998863
+  </oneNumber>
+  <oneNumber name='ELEV'>
+      72
+  </oneNumber>
+</newNumberVector>
+<newTextVector device='Weather Watcher' name='LABELS'>
+  <oneText name='LABEL_1'>
+      Dew Point
+  </oneText>
+  <oneText name='LABEL_2'>
+      Temperature
+  </oneText>
+  <oneText name='LABEL_3'>
+      Wind
+  </oneText>
+  <oneText name='LABEL_4'>
+      Gust
+  </oneText>
+  <oneText name='LABEL_5'>
+      Clouds
+  </oneText>
+  <oneText name='LABEL_6'>
+      Humidity
+  </oneText>
+  <oneText name='lABEL_7'>
+      Pressure
+  </oneText>
+  <oneText name='LABEL_8'>
+      Forecast
+  </oneText>
+</newTextVector>
+<newSwitchVector device='Weather Watcher' name='CRITICALS'>
+  <oneSwitch name='CRITICAL_1'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='CRITICAL_2'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='CRITICAL_3'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='CRITICAL_4'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='CRITICAL_5'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='CRITICAL_6'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='CRITICAL_7'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='CRITICAL_8'>
+      Off
+  </oneSwitch>
+</newSwitchVector>
+<newTextVector device='Weather Watcher' name='WATCH_SOURCE'>
+  <oneText name='URL'>
+      http://127.0.0.1:5000/
+  </oneText>
+</newTextVector>
+<newTextVector device='Weather Watcher' name='KEYWORDS'>
+  <oneText name='KEY_1'>
+      dew_point
+  </oneText>
+  <oneText name='KEY_2'>
+      temp
+  </oneText>
+  <oneText name='KEY_3'>
+      wind
+  </oneText>
+  <oneText name='KEY_4'>
+      gust
+  </oneText>
+  <oneText name='KEY_5'>
+      clouds
+  </oneText>
+  <oneText name='KEY_6'>
+      humidity
+  </oneText>
+  <oneText name='KEY_7'>
+      pressure
+  </oneText>
+  <oneText name='KEY_8'>
+      forecast
+  </oneText>
+</newTextVector>
+</INDIDriver>
