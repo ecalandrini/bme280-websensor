@@ -5,6 +5,7 @@ set -e
 
 # Get absolute path of current directory
 WORKING_DIR="$(cd "$(dirname "$0")" && pwd)"
+SERVICE_USER=$(whoami)
 
 # Service name
 SERVICE_NAME="bme280-websensor"
@@ -19,7 +20,9 @@ echo "📍 Working directory: $WORKING_DIR"
 echo "🛠 Installing systemd service..."
 
 # Replace placeholder with actual working directory
-sed "s|{{WORKING_DIR}}|$WORKING_DIR|g" "$TEMPLATE_FILE" | sudo tee "$SERVICE_FILE" > /dev/null
+sed -e "s|{{WORKING_DIR}}|$WORKING_DIR|g" \
+    -e "s|{{USER}}|$SERVICE_USER|g" \
+    "$TEMPLATE_FILE" | sudo tee "$SERVICE_FILE" > /dev/null
 
 # Reload systemd
 sudo systemctl daemon-reload
