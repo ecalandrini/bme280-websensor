@@ -14,17 +14,18 @@ A Python project to read environmental data from a BME280 sensor and publish it 
    ```bash
    git clone https://github.com/ecalandrini/bme280-websensor.git
    cd bme280-websensor
+   ```
 
 2. (Optional) Create and activate a virtual environment:
    
-   ```
+   ```bash
    python3 -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
 4. Install the required Python packages:
 
-   ```
+   ```bash
    pip install -r requirements.txt
    ```
 
@@ -34,7 +35,8 @@ A Python project to read environmental data from a BME280 sensor and publish it 
    ![image info](bme280_wiring.png)
 
 3. Start the Flask Server:
-   ```
+
+   ```bash
    python3 server_api.py
    ```
 
