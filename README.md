@@ -34,17 +34,21 @@ A Python project to read environmental data from a BME280 sensor and publish it 
 1. Connect your BME280 sensor to the device running this script (e.g., Raspberry Pi).
    ![image info](bme280_wiring.png)
 
-3. Start the Flask Server:
+2. Start the Flask Server:
 
    ```bash
    python3 server_api.py
    ```
 
-4. Access sensor data:
+3. Access sensor data:
 
    http://your-device-ip:5000/
 
-4. INDIlib can then read this data via the web API for further use.
+4. Move the driver configuration file "Weather Wather_config.xml" in the __.indi__ folder
+5. Run the bash script with sudo privileges
+      ```bash
+      sudo bash install_service.sh
+      ```
 
 ## Project Structure
 - app.py — Flask application serving sensor data.
