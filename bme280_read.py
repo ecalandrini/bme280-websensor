@@ -13,7 +13,6 @@ def dew_point(temperature: float, humidity:float) -> float:
 
     alpha = (a * temperature) / (b + temperature) + m.log(humidity/100)
     Td = (b * alpha) / (a - alpha)
-    print(f"Dew Point: {Td:.2f} ºC")
 
     return Td
 
@@ -24,11 +23,12 @@ def read_bme280() -> tuple:
     
     # Read sensor data
     data = bme280.sample(bus, BME280_ADDRESS, calibration_params)
-    print(f"Temperature: {data.temperature:.2f} °C")
-    print(f"Pressure: {data.pressure:.2f} hPa")
-    print(f"Humidity: {data.humidity:.2f} %")
-    return (data.temperature, data.pressure, data.humidity)
+    dew = dew_point(data.temperature, data.humidity)
+    return (data.temperature, data.pressure, data.humidity, dew)
 
 if __name__ == "__main__":
-    temperature, pressure, humidity = read_bme280()
-    dew = dew_point(temperature, humidity)
+    temperature, pressure, humidity, dew = read_bme280()
+    print(f"Temperature: {temperature:.2f} °C")
+    print(f"Pressure: {pressure:.2f} hPa")
+    print(f"Humidity: {humidity:.2f} %")
+    print(f"Dew Point: {dew:.2f} ºC")
