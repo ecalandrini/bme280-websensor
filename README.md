@@ -30,8 +30,9 @@ pip install -r requirements.txt
 ## Usage
 
 1. Connect your BME280 sensor to the device running this script (e.g., Raspberry Pi).
+   ![image info](bme280_wiring.png)
 
-2. Start the Flask Server:
+3. Start the Flask Server:
    ```
    python3 server_api.py
    ```
