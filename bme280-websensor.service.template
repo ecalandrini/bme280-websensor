@@ -3,7 +3,7 @@ Description=BME280 Websensor Python Service
 After=network.target
 
 [Service]
-User=$(whoami)
+User={{USER}}
 WorkingDirectory={{WORKING_DIR}}
 ExecStart={{WORKING_DIR}}/.venv/bin/python {{WORKING_DIR}}/api_server.py
 Restart=always
