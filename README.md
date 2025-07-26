@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 4. Access sensor data:
 
-http://<your-device-ip>:5000/
+http://your-device-ip:5000/
 
 4. INDIlib can then read this data via the web API for further use.
 
