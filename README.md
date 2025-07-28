@@ -51,7 +51,7 @@ A Python project to read environmental data from a BME280 sensor and publish it 
       ```
 
 ## Project Structure
-- app.py — Flask application serving sensor data.
+- api_server.py — Flask application serving sensor data.
 
 - sensor.py — Python script handling communication with BME280 sensor.
 
