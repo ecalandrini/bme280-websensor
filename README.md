@@ -5,7 +5,7 @@ A Python project to read environmental data from a BME280 sensor and publish it 
 ## Features
 
 - Reads temperature, humidity, and pressure data from the BME280 sensor using Python.
-- Serves sensor data through a RESTful API on a Flask webserver.
+- Serves sensor data in HTML format through Flask webserver.
 - Designed for integration with INDIlib for astronomical instrumentation and control.
 
 ## Installation
